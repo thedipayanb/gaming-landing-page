@@ -419,7 +419,7 @@ main .hero-right {
 .war-game .war-game-right p {
 	font-size: 0.9rem;
 	line-height: 2rem;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .war-game .war-game-right .war-game-btn {
@@ -526,5 +526,162 @@ main .hero-right {
 @media (max-width: 420px) {
 	.war-game .war-game-right .war-game-btn {
 		flex-direction: column;
+	}
+}
+
+/* Recommend Games Section Styling */
+
+#recommend-games {
+	background-color: #ffffff;
+	color: #000000;
+	padding: 0 5rem 7rem;
+}
+
+#recommend-games .recommend-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.recommend-text {
+	width: 50%;
+}
+
+.recommend-text h2 {
+	font-size: 2.5rem;
+}
+
+.recommend-logo {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.recommend-logo img:first-child {
+	background-color: #fde1db;
+	padding: 1.7rem 1.2rem;
+}
+
+.recommend-logo img:last-child {
+	background-color: #f4694c;
+	padding: 1.7rem 1.2rem;
+}
+
+.recommend-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5rem;
+	margin-top: 5rem;
+}
+
+.recommend-cards .game-card {
+	display: flex;
+	gap: 2rem;
+}
+
+.game-card .game-card-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 9rem 7.5rem;
+}
+
+.game-card-1 .game-card-img {
+	background-image: url('./assets/Photos/Rectangle\ 75.png');
+}
+
+.game-card-2 .game-card-img {
+	background-image: url('./assets/Photos/Rectangle\ 76.png');
+}
+
+.game-card-3 .game-card-img {
+	background-image: url('./assets/Photos/Rectangle\ 77.png');
+}
+
+.game-card-4 .game-card-img {
+	background-image: url('./assets/Photos/Rectangle\ 78.png');
+}
+
+.game-card .game-card-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.game-card .game-card-text h3 {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.game-card-4 .game-card-text h3 {
+	width: 90%;
+}
+
+.game-card .game-card-text .game-category {
+	color: #f4694c;
+	font-size: 0.9rem;
+}
+
+.game-card .game-card-text .game-description {
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+	opacity: 0.8;
+}
+
+.game-card .game-card-text button {
+	background-color: #f4694c;
+	color: #ffffff;
+	border: 2px solid transparent;
+	padding: 0.7rem 2rem;
+}
+
+.game-card .game-card-text button:hover {
+	background-color: #ffffff;
+	color: #f4694c;
+	border: 2px solid #f4694c;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+/* Media Queries for Recommend Games Section */
+
+@media (max-width: 1200px) {
+	.recommend-cards {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.recommend-cards .game-card {
+		justify-content: center;
+	}
+
+	.recommend-cards .game-card-2,
+	.recommend-cards .game-card-4 {
+		flex-direction: row-reverse;
+	}
+}
+
+@media (max-width: 960px) {
+	.recommend-text {
+		width: 70%;
+	}
+
+	.recommend-text h2 {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 767px) {
+	#recommend-games {
+		padding: 0 2rem 5rem;
+	}
+
+	.recommend-logo img:first-child {
+		padding: 1rem 1rem;
+	}
+
+	.recommend-logo img:last-child {
+		padding: 1rem 1rem;
+		margin-left: 0.3rem;
 	}
 }
