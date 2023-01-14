@@ -14,11 +14,12 @@ body {
 
 /* Hero Section Styling */
 
-.hero-section {
+#hero-section {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url('./assets/Photos/futuristic-bg.png');
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 header {
@@ -290,5 +291,240 @@ main .hero-right {
 
 	.hr-text .right-arrow {
 		padding-bottom: 0.3rem;
+	}
+}
+
+/* Popular Games Section Styling */
+
+#most-popular {
+	background-color: #ffffff;
+	color: #000000;
+	padding: 10rem 5rem;
+}
+
+#most-popular .popular-header {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 4rem;
+}
+
+#most-popular .popular-header h2 {
+	font-size: 3rem;
+	text-align: center;
+	width: 70%;
+}
+
+#most-popular .popular-game-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+}
+
+#most-popular .popular-game-cards .card-1 {
+	background-image: url('./assets/Photos/image\ 2.png');
+	background-size: cover;
+	background-position: center right -3.5rem;
+	padding-top: 18rem;
+}
+
+#most-popular .popular-game-cards .card-2 {
+	background-image: url('./assets/Photos/image\ 4.png');
+	background-size: cover;
+	background-position: center;
+	padding-top: 18rem;
+}
+
+#most-popular .popular-game-cards .card-3 {
+	background-image: url('./assets/Photos/image\ 3.png');
+	background-size: cover;
+	background-position: center;
+	padding-top: 18rem;
+}
+
+#most-popular .popular-game-cards .card-4 {
+	background-image: url('./assets/Photos/Rectangle\ 56.png');
+	background-size: cover;
+	background-position: center;
+	padding-top: 18rem;
+}
+
+.popular-game-cards .card-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.1rem 1rem;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+}
+
+.card-details .card-left h4 {
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.card-details .card-left p {
+	font-size: 0.85rem;
+	opacity: 0.7;
+}
+
+.card-details .card-right button {
+	background-color: #f4694c;
+	color: #ffffff;
+	border: none;
+	padding: 0.55rem 0.8rem;
+}
+
+.card-details .card-right button:hover {
+	background-color: #ffffff;
+	color: #f4694c;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.popular-game-cards .card:hover {
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+	scale: 1.05;
+	transition: all 0.3s ease-in-out;
+}
+
+.war-game {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10rem;
+	column-gap: 6rem;
+}
+
+.war-game .war-game-left {
+	width: 55%;
+}
+
+.war-game .war-game-left img {
+	width: 100%;
+}
+
+.war-game .war-game-right {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}
+
+.war-game .war-game-right h2 {
+	font-size: 2.5rem;
+}
+
+.war-game .war-game-right p {
+	font-size: 0.9rem;
+	line-height: 2rem;
+	opacity: 0.6;
+}
+
+.war-game .war-game-right .war-game-btn {
+	display: flex;
+	gap: 1rem;
+}
+
+.war-game-btn button:first-child {
+	background-color: #f4694c;
+	color: #ffffff;
+	border: 2px solid transparent;
+	font-size: 1rem;
+	padding: 0.9rem 2.3rem;
+}
+
+.war-game-btn button:last-child {
+	background-color: #ffffff;
+	color: #f4694c;
+	border: 2px solid #f4694c;
+	font-size: 1rem;
+	padding: 0.9rem 2.3rem;
+}
+
+.war-game-btn button:first-child:hover {
+	background-color: #ffffff;
+	color: #f4694c;
+	border: 2px solid #f4694c;
+	scale: 1.03;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.war-game-btn button:last-child:hover {
+	background-color: #f4694c;
+	color: #ffffff;
+	scale: 1.03;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+/* Media Queries for Popular Games Section */
+
+@media (max-width: 1300px) {
+	#most-popular .popular-game-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.war-game .war-game-right h2 {
+		font-size: 2rem;
+	}
+
+	.war-game .war-game-right p {
+		line-height: 1.5rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	#most-popular .popular-header h2 {
+		width: 100%;
+	}
+
+	.war-game {
+		flex-direction: column;
+		margin-top: 6rem;
+		row-gap: 3rem;
+	}
+
+	.war-game .war-game-left {
+		width: 90%;
+	}
+
+	.war-game .war-game-right {
+		width: 90%;
+	}
+}
+
+@media (max-width: 767px) {
+	#most-popular {
+		padding: 5rem 2rem;
+	}
+
+	#most-popular .popular-header h2 {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	#most-popular .popular-game-cards {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.war-game .war-game-left {
+		width: 100%;
+	}
+
+	.war-game .war-game-right {
+		width: 100%;
+	}
+
+	.war-game .war-game-right h2 {
+		font-weight: 600;
+	}
+}
+
+@media (max-width: 420px) {
+	.war-game .war-game-right .war-game-btn {
+		flex-direction: column;
 	}
 }
