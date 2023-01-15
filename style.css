@@ -559,11 +559,13 @@ main .hero-right {
 .recommend-logo img:first-child {
 	background-color: #fde1db;
 	padding: 1.7rem 1.2rem;
+	cursor: pointer;
 }
 
 .recommend-logo img:last-child {
 	background-color: #f4694c;
 	padding: 1.7rem 1.2rem;
+	cursor: pointer;
 }
 
 .recommend-cards {
@@ -683,5 +685,31 @@ main .hero-right {
 	.recommend-logo img:last-child {
 		padding: 1rem 1rem;
 		margin-left: 0.3rem;
+	}
+}
+
+@media (max-width: 600px) {
+	#recommend-games .recommend-header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 2rem;
+	}
+
+	.recommend-text {
+		width: 100%;
+	}
+
+	.recommend-text h2 {
+		font-weight: 600;
+	}
+
+	.recommend-cards .game-card {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.game-card .game-card-img {
+		background-size: contain;
 	}
 }
