@@ -730,3 +730,120 @@ main .hero-right {
 		width: 75%;
 	}
 }
+
+/* Most Played Games Section */
+
+#most-played {
+	background-image: url('./assets/Icons/GAMES\ OF\ THE\ WORLD.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color: #000000;
+	padding: 6rem 5rem;
+	position: relative;
+}
+
+#most-played .most-played-header {
+	display: flex;
+	justify-content: center;
+}
+
+#most-played .most-played-header h2 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+#most-played .most-played-paragraph {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 7rem;
+}
+
+#most-played .most-played-paragraph p {
+	line-height: 2rem;
+	opacity: 0.7;
+	position: relative;
+	width: 55%;
+}
+
+#most-played .most-played-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 5rem;
+}
+
+.most-played-img .img-1 {
+	width: 30%;
+	min-width: 15rem;
+	position: relative;
+	top: -10rem;
+}
+
+.most-played-img .img-2,
+.most-played-img .img-3 {
+	width: 20%;
+	min-width: 15rem;
+	align-self: flex-end;
+}
+
+/* Media Queries for Most Played Games Section */
+
+@media (max-width: 1400px) {
+	#most-played .most-played-header h2 {
+		width: 50%;
+	}
+}
+
+@media (max-width: 1280px) {
+	#most-played .most-played-header h2 {
+		width: 60%;
+	}
+
+	#most-played .most-played-paragraph {
+		margin: 4rem 0;
+		justify-content: center;
+		text-align: center;
+	}
+
+	#most-played .most-played-paragraph p {
+		width: 70%;
+	}
+
+	#most-played .most-played-img {
+		gap: 3rem;
+	}
+
+	.most-played-img .img-1 {
+		position: static;
+	}
+
+	#most-played .most-played-img img {
+		width: 20rem;
+		align-self: center;
+	}
+}
+
+@media (max-width: 1023px) {
+	#most-played .most-played-header h2 {
+		width: 70%;
+		font-size: 2.5rem;
+	}
+
+	#most-played .most-played-paragraph p {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	#most-played {
+		padding: 5rem 2rem;
+	}
+
+	#most-played .most-played-header h2 {
+		width: 100%;
+		font-size: 2rem;
+		font-weight: 600;
+	}
+}
