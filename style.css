@@ -943,6 +943,7 @@ footer {
 
 .footer-logo img {
 	margin-right: 1rem;
+	cursor: pointer;
 }
 
 .footer-list {
@@ -961,6 +962,11 @@ footer {
 .footer-list p {
 	font-weight: 300;
 	opacity: 0.7;
+}
+
+.footer-list p:not(:first-child):hover {
+	cursor: pointer;
+	color: #f4694c;
 }
 
 /* Media Queries for Footer Section */
