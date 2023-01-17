@@ -523,7 +523,7 @@ main .hero-right {
 	}
 }
 
-@media (max-width: 420px) {
+@media (max-width: 435px) {
 	.war-game .war-game-right .war-game-btn {
 		flex-direction: column;
 	}
